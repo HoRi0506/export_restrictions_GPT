@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch
 import openai
 
 # OpenAI API 키 설정
-openai.api_key = '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'
+openai.api_key = '{KEY_HERE}'
 
 # Elasticsearch 설정
 es = Elasticsearch(hosts='http://localhost:9200', http_compress=True, headers={'Content-Type': 'application/json'})
