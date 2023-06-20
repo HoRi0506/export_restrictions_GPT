@@ -1,0 +1,67 @@
+version: '3.1'
+services:
+  crawler:
+    build:
+      context: /usr/local/Homebrew/
+      dockerfile: Dockerfile
+    links:
+      - mongo
+      - redis
+      - elasticsearch
+    volumes:
+      - ./volume/crawler-logs:/server/logs/
+    environment:
+      - NUM_CONCURRENT=50
+      - LOGGING_LEVEL=30
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    volumes:
+      - ./volume/mongo-data:/data/db
+    ports:
+      - 27017:27017
+  redis:
+    image: redis
+    container_name: redis
+    volumes:
+      - ./volume/redis-data:/data
+    ports:
+      - 6379:6379
+
+  elasticsearch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.6.0
+    container_name: elasticsearch
+    environment:
+      - node.name=es01
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - esdata:/Users/kimkiwan/es/elasticsearch-7.6.0/data
+      - /Users/kimkiwan/es/elasticsearch-7.6.0/plugins/:/usr/share/elasticsearch/plugins/
+    networks:
+      - elasticsearch
+
+networks:
+  elasticsearch:
+    driver: bridge
+
+volumes:
+  esdata:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /Users/kimkiwan/anaconda3/lib/python3.10/site-packages/elasticsearch
+
