@@ -5,29 +5,29 @@ services:
       context: /usr/local/Homebrew/
       dockerfile: Dockerfile
     links:
-      - mongo
-      - redis
+#      - mongo
+#      - redis
       - elasticsearch
-    volumes:
-      - ./volume/crawler-logs:/server/logs/
+#    volumes:
+#      - ./volume/crawler-logs:/server/logs/
     environment:
       - NUM_CONCURRENT=50
       - LOGGING_LEVEL=30
 
-  mongo:
-    image: mongo
-    container_name: mongo
-    volumes:
-      - ./volume/mongo-data:/data/db
-    ports:
-      - 27017:27017
-  redis:
-    image: redis
-    container_name: redis
-    volumes:
-      - ./volume/redis-data:/data
-    ports:
-      - 6379:6379
+#  mongo:
+#    image: mongo
+#    container_name: mongo
+#    volumes:
+#      - ./volume/mongo-data:/data/db
+#    ports:
+#      - 27017:27017
+#  redis:
+#    image: redis
+#    container_name: redis
+#    volumes:
+#      - ./volume/redis-data:/data
+#    ports:
+#      - 6379:6379
 
   elasticsearch:
     build:
