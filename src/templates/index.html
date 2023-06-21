@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search and Summarize</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='../static/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search and Summarize</h1>
+        <form action="/summarize" method="post">
+            <textarea name="text" rows="10" cols="50" required></textarea><br>
+            <button type="submit">Summarize</button>
+        </form>
+    </div>
+</body>
+</html>
