@@ -1,4 +1,5 @@
 from elasticsearch import Elasticsearch
+from es_index import ElasticsearchIndex
 
 class ElasticsearchSearch:
     def __init__(self, es):
