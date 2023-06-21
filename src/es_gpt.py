@@ -3,6 +3,7 @@ from es_index import ElasticsearchIndex
 from es_search import ElasticsearchSearch
 from es_result import ask_es
 import openai
+import entities
 
 openai_key_file = '../config/openaikey.txt'
 file_path = openai_key_file
@@ -36,10 +37,9 @@ class GPTSummary:
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant that summarizes text in detail."},
                     {"role": "user", "content": summary_text},
-                    {"role": "user", "content": "해당 내용을 요약해줘."},
+                    {"role": "user", "content": "해당 내용을 한국어로 자세히 요약해줘."},
                 ],
             )
-            # generated_text = response['choices'][0]['message']
             generated_text = response['choices'][0]['message']['content'].strip()
             return generated_text
 
