@@ -2,15 +2,33 @@
 <html>
 <head>
     <title>Search and Summarize</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', path='../static/styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Search and Summarize</h1>
-        <form action="/summarize" method="post">
-            <textarea name="text" rows="10" cols="50" required></textarea><br>
-            <button type="submit">Summarize</button>
-        </form>
+    <div id="main">
+        <div id="contents">
+            <nav>
+                <a href="/" class="logo">2게 되조?</a>
+            </nav>
+            <h1>Search and Summarize</h1>
+            <form action="/summarize" method="post">
+                <textarea name="text" rows="4" cols="50" required></textarea><br>
+                <button id="summarize-btn" type="submit">Summarize</button>
+            </form>
+        </div>
+
+        <script>
+            // 엔터 키 감지 이벤트 처리
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "Enter") {
+                    event.preventDefault(); // 엔터 키의 기본 동작 방지
+                    document.getElementById("summarize-btn").click(); // 버튼 클릭 이벤트 발생
+                }
+            });
+        </script>
     </div>
 </body>
 </html>
