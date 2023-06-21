@@ -2,9 +2,19 @@
 <html>
 <head>
     <title>Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='../static/styles.css') }}">
 </head>
 <body>
-    <h1>Summary</h1>
-    <p>{{ summary }}</p>
+    <div id="main">
+        <div id="contents">
+            <nav>
+                <a href="/" class="logo">2게 되조?</a>
+            </nav>
+            <h1>Summary</h1>
+            <div class="summary">
+                <p>{{ summary }}</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
