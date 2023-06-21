@@ -1,11 +1,16 @@
 import json
+
 from elasticsearch import Elasticsearch
+
+
 class ElasticsearchIndex:
+
     def __init__(self):
         # Elasticsearch 클라이언트 생성
         self.es = Elasticsearch(hosts='http://localhost:9200', http_compress=True)
         # JSON 데이터 파일 경로
-        self.data_file = 'json_total.json'
+        self.data_file = '../data/json_total.json'
+
     def create_elasticsearch_index(self):
         # JSON 파일 열기
         with open(self.data_file, 'r') as file:
@@ -59,3 +64,6 @@ class ElasticsearchIndex:
         self.es.indices.create(index='my_index', body=settings)  # 인덱스 생성
         for document in json_data:
             self.es.index(index='my_index', body=document)
+
+if __name__ == "__main__":
+    print(1)

@@ -1,9 +1,16 @@
+from elasticsearch import Elasticsearch
+
 class ElasticsearchSearch:
     def __init__(self, es):
         # Elasticsearch 클라이언트 생성
         self.es = es
+    
+    def search(self, index, body, size):
+        return self.es.search(index=index, body=body, size=size)
+    
     def search_in_elasticsearch(self, user_question):
         # 질문을 분석하여 대상국가와 품목 추출
+        user_question = str(user_question)
         tokens = user_question.split()
         # target_country = tokens[0]  # 첫 번째 토큰을 대상국가로
         # Elasticsearch에서 관련 정보 검색
@@ -58,3 +65,7 @@ class ElasticsearchSearch:
             }
             search_results.append(result)
         return search_results
+
+
+if __name__ == "__main__":
+    print(1)
