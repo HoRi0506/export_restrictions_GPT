@@ -63,3 +63,26 @@ Mentor: dane ahn
 5. 결과를 분석 및 해석
   
 6. 데모 제작(영상 등)
+
+<br>
+
+----------
+
+<br>
+
+- [세팅 과정 1](https://www.notion.so/1-1f2ed564bf26403c9dd403921c6d8847?pvs=4)
+
+- [세팅 과정 2](https://www.notion.so/2-3216d6e915d346af9bc0eacbaad17aa6?pvs=4)
+
+- [세팅 과정 3(git)](https://www.notion.so/Git-setting-de10ad3355394983800bcd2651e7da64?pvs=4)
+
+- [Elasticsearch_nori 1](https://www.notion.so/nori_plugin-33463ceddafa453792b75c6c6a6b45fd?pvs=4)
+
+- [Elasticsearch nori 2](https://www.notion.so/nori-indexing-ecebfb5e4c364d26a385ca59569c3447?pvs=4)
+
+- [test code](https://www.notion.so/cb741a9ac6ca4abfa3f81c70a6bbe6fd?pvs=4)
+
+- [FastAPI 세팅](https://www.notion.so/FastAPI-e2548f334f79482cbf1a5c490aa6b993?pvs=4)
+
+- [PPT](https://www.notion.so/PPT-FastAPI-540dcf0913d04eddb9b20ee2fa04154d?pvs=4)
+
