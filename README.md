@@ -86,3 +86,12 @@ Mentor: dane ahn
 
 - [PPT](https://www.notion.so/PPT-FastAPI-540dcf0913d04eddb9b20ee2fa04154d?pvs=4)
 
+<br>
+
+------
+
+<br>
+
+- 데모 영상
+
+<img src="https://github.com/team-fc-fp2/final_project_es_gpt/assets/123163133/2ff7715d-3000-4706-a069-da1f57846cd1">
