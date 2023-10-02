@@ -1,12 +1,14 @@
 # final_project_es_gpt
 
-## Title: 수출 규제 관련 데이터로부터 유저 QA 가능한 검색 챗봇 시스템 개발
+## Main Title: 수출규제 GPT
+<br>
+## Subject: 수출 규제 관련 데이터로부터 유저 QA 가능한 검색 챗봇 시스템 개발
 <br>
 
 
-team_name: 2게 되조?
+Team_name: 2게 되조?
 
-Member: HoRi0506, kwanggyu99, Kate Lee
+Member: HoRi0506(김기완), kwanggyu99(남광규), Kate Lee(이성현)
 
 Duration: 23/4/28 - 23/6/22
 
