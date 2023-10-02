@@ -1,8 +1,9 @@
-# final_project_es_gpt
+# final_project
 
 ## Main Title: 수출규제 GPT
 <br>
-## Subject: 수출 규제 관련 데이터로부터 유저 QA 가능한 검색 챗봇 시스템 개발
+
+### Subject: 수출 규제 관련 데이터로부터 유저 QA 가능한 검색 챗봇 시스템 개발
 <br>
 
 
