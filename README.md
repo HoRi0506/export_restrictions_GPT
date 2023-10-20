@@ -73,7 +73,7 @@ Mentor: dane ahn
 
 <br>
 
-- [세팅 과정 1](https://www.notion.so/1-1f2ed564bf26403c9dd403921c6d8847?pvs=4)
+- ~~[세팅 과정 1](https://www.notion.so/1-1f2ed564bf26403c9dd403921c6d8847?pvs=4)~~
 
 - [세팅 과정 2](https://www.notion.so/2-3216d6e915d346af9bc0eacbaad17aa6?pvs=4)
 
