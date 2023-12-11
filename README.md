@@ -55,7 +55,7 @@ Mentor: dane ahn
 
 ### Story Line
 
-1. 필요한 라이브러리와 docker 환경 세팅
+1. 필요한 라이브러리와 Docker 환경 세팅
  
 2. 수출 규제 데이터를 ElasticSearch를 통해 빅데이터에서 원하는 부분 추출을 빠르게 할 수 있음
   
